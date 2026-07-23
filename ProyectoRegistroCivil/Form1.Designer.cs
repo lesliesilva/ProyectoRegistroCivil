@@ -41,41 +41,45 @@
             // lblTitulo
             // 
             lblTitulo.AutoSize = true;
-            lblTitulo.Location = new Point(309, 83);
+            lblTitulo.Font = new Font("Stencil", 16F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            lblTitulo.ForeColor = SystemColors.ButtonHighlight;
+            lblTitulo.Location = new Point(49, 64);
             lblTitulo.Name = "lblTitulo";
-            lblTitulo.Size = new Size(214, 25);
+            lblTitulo.Size = new Size(421, 38);
             lblTitulo.TabIndex = 0;
             lblTitulo.Text = "SISTEMA REGISTRO CIVIL";
             // 
             // lblContrasena
             // 
             lblContrasena.AutoSize = true;
-            lblContrasena.Location = new Point(219, 239);
+            lblContrasena.Font = new Font("Arial Black", 10F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            lblContrasena.Location = new Point(23, 233);
             lblContrasena.Name = "lblContrasena";
-            lblContrasena.Size = new Size(105, 25);
+            lblContrasena.Size = new Size(143, 28);
             lblContrasena.TabIndex = 1;
-            lblContrasena.Text = "Contrasena:";
+            lblContrasena.Text = "Contraseña:";
             lblContrasena.Click += lblContrasena_Click;
             // 
             // lblUsuario
             // 
             lblUsuario.AutoSize = true;
-            lblUsuario.Location = new Point(229, 162);
+            lblUsuario.Font = new Font("Arial Black", 10F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            lblUsuario.Location = new Point(32, 144);
             lblUsuario.Name = "lblUsuario";
-            lblUsuario.Size = new Size(76, 25);
+            lblUsuario.Size = new Size(103, 28);
             lblUsuario.TabIndex = 2;
             lblUsuario.Text = "Usuario:";
             // 
             // txtUsuario
             // 
-            txtUsuario.Location = new Point(320, 162);
+            txtUsuario.Location = new Point(172, 143);
             txtUsuario.Name = "txtUsuario";
             txtUsuario.Size = new Size(150, 31);
             txtUsuario.TabIndex = 3;
             // 
             // txtContrasena
             // 
-            txtContrasena.Location = new Point(320, 233);
+            txtContrasena.Location = new Point(172, 230);
             txtContrasena.Name = "txtContrasena";
             txtContrasena.Size = new Size(150, 31);
             txtContrasena.TabIndex = 4;
@@ -83,7 +87,8 @@
             // 
             // btnIngresar
             // 
-            btnIngresar.Location = new Point(320, 297);
+            btnIngresar.Font = new Font("Arial", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnIngresar.Location = new Point(182, 302);
             btnIngresar.Name = "btnIngresar";
             btnIngresar.Size = new Size(112, 34);
             btnIngresar.TabIndex = 5;
@@ -94,9 +99,10 @@
             // lklRegistro
             // 
             lklRegistro.AutoSize = true;
-            lklRegistro.Location = new Point(409, 361);
+            lklRegistro.Font = new Font("Arial", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lklRegistro.Location = new Point(258, 373);
             lklRegistro.Name = "lklRegistro";
-            lklRegistro.Size = new Size(98, 25);
+            lklRegistro.Size = new Size(112, 23);
             lklRegistro.TabIndex = 6;
             lklRegistro.TabStop = true;
             lklRegistro.Text = "Registrarse";
@@ -105,9 +111,10 @@
             // lblCuenta
             // 
             lblCuenta.AutoSize = true;
-            lblCuenta.Location = new Point(209, 361);
+            lblCuenta.Font = new Font("Arial", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblCuenta.Location = new Point(32, 370);
             lblCuenta.Name = "lblCuenta";
-            lblCuenta.Size = new Size(194, 25);
+            lblCuenta.Size = new Size(216, 23);
             lblCuenta.TabIndex = 7;
             lblCuenta.Text = "¿No tienes una cuenta?";
             // 
@@ -115,7 +122,8 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            BackColor = SystemColors.ActiveCaption;
+            ClientSize = new Size(510, 450);
             Controls.Add(lblCuenta);
             Controls.Add(lklRegistro);
             Controls.Add(btnIngresar);
